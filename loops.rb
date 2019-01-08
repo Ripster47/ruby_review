@@ -1,32 +1,32 @@
 
-# array = ["jim", "sam", "jane", "spot", "Giraldo Mustafar"]
+array = ["jim", "sam", "jane", "spot", "Giraldo Mustafar"]
 
 
-# array.length.times do |index|
+array.length.times do |index|
 
-#   dog = array[index]
+  dog = array[index]
   
-#   p dog
+  p dog
 
-# end
+end
 
-# puts "================="
+puts "================="
 
-# array.each do |dog|
+array.each do |dog|
 
-#   p dog
+  p dog
 
-# end
+end
 
-# count = 10
+count = 10
 
-# while count > 0
+while count > 0
   
-#   puts count
+  puts count
 
-#   count -= 1
+  count -= 1
 
-# end
+end
 
 count = 10
 
