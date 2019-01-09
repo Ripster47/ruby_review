@@ -23,6 +23,7 @@ end
 class Manager < Employee
 
   def initialize(input_options)
+    super(input_options)
     @employees = input_options[:employees]
   end
 
