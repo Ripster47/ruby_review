@@ -17,10 +17,6 @@
     @salary *= 1.05
   end
 
-  def change_status(new_status)
-    @active = new_status
-  end
-
 end
 
 class Manager < Employee
@@ -37,14 +33,23 @@ class Manager < Employee
   end
 
   def give_all_raises
-    @employees.length.times do |index|
-      @employees[index].give_annual_raise
-    end
+      #input: the list of employee objects for this manager aka @employees
+      #effect or output: increase salary by 5%
+      #go through employees one at a time
+      #give individual employee a raise
+    @employees.length.times do |index|      #options for writing this method @employees.each do |employee|
+      @employees[index].give_annual_raise                                     #employee.give_annual_raise
+    end                                                                       #end
   end
 
   def fire_all_employees
+    #input: the list of employee objects for this manager aka @employees
+    #effect: change all employees being managed active status to false
+    #go through employees one at a time
+    #change each of their statuses from true to false
     @employees.length.times do |index|
-      @employees[index].change_status(false)
+      @employees[index].active = false.    #No need to write a new method within the Employee class because we
+                                           #still have access to the writer method for @active from our attr_writer :active in the Employee class
     end
   end
 
