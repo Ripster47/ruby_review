@@ -79,9 +79,6 @@ employee_2.print_info
 manager.give_all_raises
 employee_1.print_info
 employee_2.print_info
-
-employee_1.print_info
-employee_2.print_info
 manager.fire_all_employees
 employee_1.print_info
 employee_2.print_info
